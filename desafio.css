@@ -1,0 +1,36 @@
+body {
+    background-color: #62A7AF;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000000;
+}
+
+#cabecalho, #ordenacao, #sudoku {
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    padding: 1%;
+    margin: 1%;
+}
+
+#rodape {
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    padding: 5px;
+    margin: 1%;
+}
+
+a, a:hover, a::selection, a:active, a::after, a:visited {
+    text-decoration: none;
+}
+
+.logo {
+    width: 20%;
+    height: 20%;
+}
+
+.col-30 {
+    width: 30%;
+}
+
+.col-70 {
+    width: 70%;
+}
