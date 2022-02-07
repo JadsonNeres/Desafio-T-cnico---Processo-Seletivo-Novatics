@@ -33,12 +33,13 @@ function ordenar() {
 
 function validarSudoku() {
 
-    let matriz = "[" + document.querySelector("#matriz_sudoku").value + "]"
-    
+    let matriz = document.querySelector("#matriz_sudoku").value
+    matriz = JSON.parse(matriz)
+
     for (let i = 0; i < 9; i++) {
-        let row = new Set()
-            col = new Set()
-            box = new Set()
+        const row = new Set()
+        const col = new Set()
+        const box = new Set()
     
         for (let j = 0; j < 9; j++) {
           let _row = matriz[i][j]
@@ -60,6 +61,7 @@ function validarSudoku() {
             if (box.has(_box)) return false
             box.add(_box)
             document.querySelector("#resultado_sudoku").value = "Matriz Inválida"
+
           } 
         }
     }
